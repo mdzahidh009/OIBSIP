@@ -28,7 +28,7 @@ function convertTemperature() {
         celsius: (temperature - 32) * 5/9,
         kelvin: (temperature - 32) * 5/9 + 273.15
       };
-      document.getElementById('result').textContent = `${temperature} °F = ${result.celsius.toFixed(2)} °C / ${result.kelvin.toFixed(2)} K`;
+      document.getElementById('result').textContent = `${temperature} °F = ${result.celsius.toFixed(2)} °C = ${result.kelvin.toFixed(2)} K`;
       break;
     case 'kelvin':
       // Convert Kelvin to Celsius and Fahrenheit
@@ -36,7 +36,7 @@ function convertTemperature() {
         celsius: temperature - 273.15,
         fahrenheit: (temperature - 273.15) * 9/5 + 32
       };
-      document.getElementById('result').textContent = `${temperature} K = ${result.celsius.toFixed(2)} °C / ${result.fahrenheit.toFixed(2)} °F`;
+      document.getElementById('result').textContent = `${temperature} K = ${result.celsius.toFixed(2)} °C = ${result.fahrenheit.toFixed(2)} °F`;
       break;
     default:
       break;
